@@ -7,19 +7,19 @@ export const Landing = () => {
   console.log(name);
 
   return (
-    <div className="p-16 flex justify-between">
-      <div className="px-16 py-8 border-2 border-black rounded-lg shadow-xl">
+    <div className=" flex justify-between">
+      <div className="px-10 flex flex-col py-4 border-2 rounded-lg shadow-xl">
         <input
           type="text"
           placeholder="Name"
           onChange={(e) => {
             setName(e.target.value);
           }}
-          className="p-2 border-2"
+          className="p-2 border-2 rounded-xl"
         />
         <Link
           to={`/room/?name=${name}`}
-          className="bg-blue-200 hover:bg-blue-600 rounded-xl shadow-xl"
+          className="bg-blue-200 hover:bg-blue-600 rounded-xl shadow-xl mt-2 p-2"
         >
           Join
         </Link>
